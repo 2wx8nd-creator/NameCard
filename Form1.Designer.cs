@@ -33,11 +33,11 @@
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             button1 = new Button();
             panel1 = new Panel();
+            label3 = new Label();
+            label2 = new Label();
             label1 = new Label();
             panel2 = new Panel();
             pictureBox1 = new PictureBox();
-            label2 = new Label();
-            label3 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -71,6 +71,27 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(233, 426);
             panel1.TabIndex = 3;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(13, 119);
+            label3.Name = "label3";
+            label3.Size = new Size(39, 15);
+            label3.TabIndex = 3;
+            label3.Text = "label3";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.FromArgb(228, 228, 200);
+            label2.Font = new Font("Noto Sans KR", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(13, 63);
+            label2.Name = "label2";
+            label2.Padding = new Padding(0, 0, 0, 2);
+            label2.Size = new Size(63, 29);
+            label2.TabIndex = 2;
+            label2.Text = "민승호";
             // 
             // label1
             // 
@@ -108,27 +129,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.FromArgb(228, 228, 200);
-            label2.Font = new Font("Noto Sans KR", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(13, 63);
-            label2.Name = "label2";
-            label2.Padding = new Padding(0, 0, 0, 2);
-            label2.Size = new Size(63, 29);
-            label2.TabIndex = 2;
-            label2.Text = "민승호";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(13, 356);
-            label3.Name = "label3";
-            label3.Size = new Size(39, 15);
-            label3.TabIndex = 3;
-            label3.Text = "label3";
             // 
             // Form1
             // 
