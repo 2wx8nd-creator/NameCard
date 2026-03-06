@@ -23,5 +23,16 @@ namespace WinFormsApp3
         {
 
         }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawRectangle(new Pen(Color.FromArgb(150, 0, 0, 0), 1),
+            0, 0, this.panel5.Width - 1, this.panel5.Height - 1);
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

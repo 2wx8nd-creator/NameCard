@@ -38,9 +38,14 @@
             label1 = new Label();
             panel2 = new Panel();
             pictureBox1 = new PictureBox();
+            panel3 = new Panel();
+            panel4 = new Panel();
+            panel5 = new Panel();
+            panel6 = new Panel();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel6.SuspendLayout();
             SuspendLayout();
             // 
             // imageList1
@@ -52,9 +57,9 @@
             // button1
             // 
             button1.Font = new Font("Noto Sans KR Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 129);
-            button1.Location = new Point(453, 339);
+            button1.Location = new Point(545, 318);
             button1.Name = "button1";
-            button1.Padding = new Padding(0, 0, 0, 2);
+            button1.Padding = new Padding(2, 0, 0, 2);
             button1.Size = new Size(157, 68);
             button1.TabIndex = 2;
             button1.Text = "배경색　바꾸기";
@@ -130,13 +135,53 @@
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
+            // panel3
+            // 
+            panel3.BackColor = Color.FromArgb(240, 239, 214);
+            panel3.BorderStyle = BorderStyle.Fixed3D;
+            panel3.Location = new Point(335, 291);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(44, 95);
+            panel3.TabIndex = 5;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.FromArgb(240, 239, 214);
+            panel4.Location = new Point(2, 2);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(44, 95);
+            panel4.TabIndex = 6;
+            panel4.Paint += panel4_Paint;
+            // 
+            // panel5
+            // 
+            panel5.BackColor = Color.FromArgb(240, 239, 214);
+            panel5.Location = new Point(385, 291);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(44, 95);
+            panel5.TabIndex = 6;
+            panel5.Paint += panel5_Paint;
+            // 
+            // panel6
+            // 
+            panel6.BackColor = Color.FromArgb(185, 184, 160);
+            panel6.Controls.Add(panel4);
+            panel6.Location = new Point(435, 291);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(46, 97);
+            panel6.TabIndex = 7;
+            // 
             // Form1
             // 
+            AcceptButton = button1;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(10, 68, 152);
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(787, 450);
+            Controls.Add(panel6);
+            Controls.Add(panel5);
+            Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(button1);
@@ -148,6 +193,7 @@
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel6.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -161,5 +207,9 @@
         private PictureBox pictureBox1;
         private Label label2;
         private Label label3;
+        private Panel panel3;
+        private Panel panel4;
+        private Panel panel5;
+        private Panel panel6;
     }
 }
