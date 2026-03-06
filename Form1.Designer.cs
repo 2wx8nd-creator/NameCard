@@ -33,6 +33,7 @@
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             button1 = new Button();
             panel1 = new Panel();
+            textBox4 = new TextBox();
             label1 = new Label();
             panel2 = new Panel();
             pictureBox1 = new PictureBox();
@@ -45,7 +46,6 @@
             panel6 = new Panel();
             panel7 = new Panel();
             panel8 = new Panel();
-            textBox4 = new TextBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -77,13 +77,24 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(240, 239, 214);
+            panel1.BackColor = Color.FromArgb(228, 227, 203);
             panel1.Controls.Add(textBox4);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(2, 2);
             panel1.Name = "panel1";
             panel1.Size = new Size(233, 426);
             panel1.TabIndex = 3;
+            // 
+            // textBox4
+            // 
+            textBox4.BackColor = Color.FromArgb(228, 228, 200);
+            textBox4.Location = new Point(13, 56);
+            textBox4.Multiline = true;
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(206, 356);
+            textBox4.TabIndex = 3;
+            textBox4.Text = "\r\n학번 : 25081092\r\n영미언어문화 전공\r\n컴퓨터SW 복수전공\r\n\r\n10년 후 민승호(32세)의 결혼 및 마이하우스 장만을 위해 나름 열심히 사는 중입니다.\r\n\r\n증명사진의 스캔본이 없어 대신\r\n귀여운 햄스터의 이미지를 삽입했습니다.";
+            textBox4.TextChanged += textBox4_TextChanged;
             // 
             // label1
             // 
@@ -104,7 +115,7 @@
             // 
             // panel2
             // 
-            panel2.BackColor = Color.FromArgb(240, 239, 214);
+            panel2.BackColor = Color.FromArgb(228, 227, 203);
             panel2.Controls.Add(pictureBox1);
             panel2.Location = new Point(2, 2);
             panel2.Name = "panel2";
@@ -126,7 +137,7 @@
             // 
             // panel3
             // 
-            panel3.BackColor = Color.FromArgb(240, 239, 214);
+            panel3.BackColor = Color.FromArgb(228, 227, 203);
             panel3.BorderStyle = BorderStyle.Fixed3D;
             panel3.Controls.Add(textBox1);
             panel3.Location = new Point(335, 291);
@@ -150,7 +161,7 @@
             // 
             // panel4
             // 
-            panel4.BackColor = Color.FromArgb(240, 239, 214);
+            panel4.BackColor = Color.FromArgb(228, 227, 203);
             panel4.Controls.Add(textBox3);
             panel4.Location = new Point(2, 2);
             panel4.Name = "panel4";
@@ -173,7 +184,7 @@
             // 
             // panel5
             // 
-            panel5.BackColor = Color.FromArgb(240, 239, 214);
+            panel5.BackColor = Color.FromArgb(228, 227, 203);
             panel5.Controls.Add(textBox2);
             panel5.Location = new Point(385, 291);
             panel5.Name = "panel5";
@@ -220,16 +231,6 @@
             panel8.Name = "panel8";
             panel8.Size = new Size(402, 252);
             panel8.TabIndex = 9;
-            // 
-            // textBox4
-            // 
-            textBox4.BackColor = Color.FromArgb(228, 228, 200);
-            textBox4.Location = new Point(13, 56);
-            textBox4.Multiline = true;
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(206, 356);
-            textBox4.TabIndex = 3;
-            textBox4.Text = "\r\n학번 : 25081092\r\n영미언어문화 전공\r\n컴퓨터SW 복수전공\r\n\r\n10년 후 민승호(32세)의 결혼 및 마이하우스 장만을 위해 나름 열심히 사는 중입니다.\r\n\r\n증명사진의 스캔본이 없어 대신 귀여운 햄스터의 이미지를 삽입했습니다.";
             // 
             // Form1
             // 
